@@ -1,0 +1,43 @@
+$primary-color: rgb(88, 201, 152);
+$btn-width: 100px;
+$btn-small: 100px;
+.container {
+    h1 {
+        color: red;
+
+        @media screen and (max-width: 760px) {
+            font-size: .8em;
+        }
+    }
+    p {
+        font-size: 14px;
+    }
+
+a{
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: none;
+    }
+    }
+    .btn {
+        color: #fff;
+        background-color: $primary-color;
+        padding: 5px 10px;
+        text-decoration: none;
+        width: $btn-width;
+        display: inline-block;
+        text-align: center;
+        &.btn-large {
+            width: $btn-width * 2;
+    
+        }
+        &.btn-small {
+            width: $btn-width / 2;
+    
+        }
+    }
+
+    
+}
+
